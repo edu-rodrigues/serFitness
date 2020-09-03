@@ -1,0 +1,7 @@
+<svg id="Scroll" xmlns="http://www.w3.org/2000/svg" width="25" height="47" viewBox="0 0 25 47">
+  <g id="Retângulo_1" data-name="Retângulo 1" fill="none" stroke="#ff9204" stroke-width="3">
+    <rect width="25" height="47" rx="12.5" stroke="none"/>
+    <rect x="1.5" y="1.5" width="22" height="44" rx="11" fill="none"/>
+  </g>
+  <rect id="Retângulo_2" data-name="Retângulo 2" width="7" height="17" rx="3.5" transform="translate(9 7)" fill="#ff9204"/>
+</svg>

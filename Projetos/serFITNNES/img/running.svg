@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.183" height="106.236" viewBox="0 0 104.183 106.236">
+  <g id="running" transform="translate(2.828 2)">
+    <circle id="Elipse_3" data-name="Elipse 3" cx="12" cy="12" r="12" transform="translate(59)" fill="none" stroke="#ff9204" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Caminho_4" data-name="Caminho 4" d="M8,20.884,19.036,9.847a12.372,12.372,0,0,1,17.343,0L67.518,40.986a12.061,12.061,0,0,0,16.161.788l11.036-9.066" transform="translate(3.825 2.915)" fill="none" stroke="#ff9204" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Caminho_5" data-name="Caminho 5" d="M33.391,10,14.866,28.525c-5.912,5.912-3.942,16.555,3.942,19.708l15.372,5.912a11.535,11.535,0,0,1,7.489,10.642v23.65" transform="translate(13.908 13.799)" fill="none" stroke="#ff9204" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Caminho_6" data-name="Caminho 6" d="M40.474,22.942,30.226,33.19c-3.153,3.153-8.277,3.153-11.036,0L5,19" transform="translate(-5 40.273)" fill="none" stroke="#ff9204" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="Linha_5" data-name="Linha 5" y1="20" x2="20" transform="translate(43 35)" fill="none" stroke="#ff9204" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+
+  /* Variáveis */
+   --black: #100F0F;
+  --orange:#FF9204;
+  --light-orange: #F7CC95;
+  --light-gray: #FCFAF8;
+  --medium-gray: #3D3B3B;
+  --dark-gray:#2B2929; 
+  --grad-orange: linear-gradient(180deg,#100F0F,#201301);
+
+  --padding: 2rem;
+}
+
+
+header{
+  width: 100%;
+  padding: var(--padding);
+  font-size: 2rem;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+
+
+header .row > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  font-size: 2rem;
+  color: white;
+  position: relative;
+}
+
+header .logo span{
+  color: var(--orange);
+}
+
+header .logo::after{
+  content: url('./img/gym.svg');
+  position: absolute;
+  top: -80%;
+  overflow: hidden;
+}
+
+header input[type="checkbox"]{
+  display: none;
+}
+
+header .toggle{
+  background-color: var(--orange);
+  width: 5rem;
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: relative;
+
+}
+
+header .toggle p{
+  display: none;
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+}
+
+header label{
+  position: relative;
+}
+
+header nav{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10rem;
+  background-color: var(--orange);
+
+  position: absolute;
+  top: -2rem;
+  left: 30rem;
+  transform: all 1s;
+}
+
+header nav ul li{
+  list-style-type: none;
+  margin: 2rem;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+}
+
+header #toggle:checked ~ label nav{
+  display: flex;
+  left: -28rem;
+}
+
+
+
+header #toggle:checked ~ label .toggle p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gray);
+  padding: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+
+@media only screen and (min-width: 768px){
+  header .row div{
+    align-items: center;
+  }
+  header .toggle{
+    display: none;
+  }
+  header nav{
+    display: block;
+    background-color: transparent;
+    height: auto;
+    position: static;
+    padding: 0;
+  }
+  header nav ul{
+    display: flex;
+  }
+  header nav ul li{
+    margin: .5rem;
+  }
+  header nav ul li a{
+    font-size: 1.6rem;
+  }
+  header nav ul li a:hover{
+    color: var(--orange);
+  }
+}
+
+@media only screen and (min-width: 1930px){
+  header nav ul li a{
+    font-size: 2.5rem;
+  }
+  header .logo {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* MAIN */
+main{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('./img/BG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+main .row > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+main .row div > h1{
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+main .row div h1 > span{
+  color: var(--orange);
+}
+
+main .row div > p{
+  color: white;
+  font-size: 1.6rem;
+  max-width: 60%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .row div .scroll img{
+  display: none;
+  width: 3.5rem;
+  height: 3rem;
+  margin: 4rem 0;
+}
+
+@media only screen and (min-width: 768px){
+  main{
+    background-image: url('./img/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  main .row div > h1{
+    font-size: 3.5rem;
+  }
+
+  main .row div > p{
+    width: 50%;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+ 
+  main .row div > p{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    width: 30%;
+  }
+  main .row div .scroll img{
+    display: block;
+  }
+}
+
+
+/* BENEFICIOS */
+.beneficios{
+  background-color: var(--light-orange);
+  min-height: 100vh;
+
+}
+
+.beneficios .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10.1rem 0;
+
+}
+
+.beneficios .box{
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+  padding: 4rem 2rem;
+  margin-bottom: 1rem;
+  background-image: var(--grad-orange);
+  color: white;
+}
+
+.beneficios .box h4{
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2rem 0 ;
+}
+
+.beneficios .box p{
+  font-size: 1.4rem;
+  text-align: center;
+
+}
+
+.beneficios-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--black);
+  padding: 6rem 4rem ;
+  color: white;
+  text-align: center;
+}
+
+.beneficios-info h2{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.beneficios-info p{
+  max-width: 60rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
